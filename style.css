@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    border-top: 1px solid rgb(95, 95, 95);
+    border-left: 1px solid rgb(95, 95, 95);
+    display: grid;
+    padding: 0%;
+    min-height: 502px;
+    max-width: 502px;
+    max-width: 502px;
+    min-width: 502px;
+}
+.square{
+    border-right: 1px solid rgb(95, 95, 95);
+    border-bottom: 1px solid rgb(95, 95, 95);
+    margin: 0%;
+}
+.square:hover {
+    background-color: rgb(180, 180, 180);
+}
