@@ -1,9 +1,43 @@
 body {
+    font-family: 'Ysabeau Office', sans-serif;
+    margin: 0px;
+}
+.tittle {
     display: flex;
     justify-content: center;
-    align-items: center;
+    font-size: 40px;
+    margin: 0%;
+    padding: 15px;
 }
+
+.center, .color, .sizeSelection, p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+}
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: rgb(55, 103, 7);
+}
+#color {
+    border: 0px;
+    height: 50px;
+}
+button {
+    height: 45px;
+}
+
 .box {
+    background-color: white;
     border-top: 1px solid rgb(95, 95, 95);
     border-left: 1px solid rgb(95, 95, 95);
     display: grid;
@@ -17,7 +51,4 @@ body {
     border-right: 1px solid rgb(95, 95, 95);
     border-bottom: 1px solid rgb(95, 95, 95);
     margin: 0%;
-}
-.square:hover {
-    background-color: rgb(180, 180, 180);
 }

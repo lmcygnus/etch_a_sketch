@@ -5,16 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@200&display=swap" rel="stylesheet">
+    <title>Etch a Sketch</title>
 </head>
 <body>  
-    <input id="barra" type="range" min="2" max="64">
-    <p>Size: <output id="value"></output></p>
-    <div class="color">
-        <p>Select the color</p>
-        <input type="color" value="#ff0000">
+    <h2 class="tittle">Etch a Sketch</h2>
+    <div class="center">
+        <div class="options">
+            <div class="sizeSelection">
+                <input id="barra" type="range" value="16" min="2" max="64">
+                <p>Size: <output id="value"></output></p>
+            </div>
+            <div class="color">
+                <p>Select the color:</p>
+                <input id="color" type="color" value="#ff0000">
+            </div>
+            <button class="rainbow">Rainbow</button>
+            <button id="eraser">Erase</button>
+            <button class="deleteAll">Clear All</button>
+        </div>
+        <div class="box"></div>
     </div>
-    <div class="box"></div>
     <script src="script.js"></script> 
 </body>
 </html>
