@@ -11,11 +11,11 @@ function createGrids() {
   for (let i=0; i<(size**2); i++) {
     const square = document.createElement("div");
     square.classList.add("square");
-    square.onclick = () => square.style.backgroundColor=`${color.value}`
+    square.onmouseover = () => square.style.backgroundColor=`${color.value}`
 
     const color = document.querySelector("#color")
       color.addEventListener("click", () => {
-        square.onclick = () => square.style.backgroundColor=`${color.value}`
+        square.onmouseover = () => square.style.backgroundColor=`${color.value}`
       })
 
     const randomColor = document.querySelector(".rainbow")
@@ -23,13 +23,13 @@ function createGrids() {
         const randomR = Math.floor(Math.random() * 256)
         const randomG = Math.floor(Math.random() * 256)
         const randomB = Math.floor(Math.random() * 256)
-        square.onclick = ()=> square.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
+        square.onmouseover = ()=> square.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`
       })
 
     const eraser = document.getElementById("eraser")
       eraser.addEventListener("click", () => {
         const deleteColor = "#ffffff";
-        square.onclick = ()=> square.style.backgroundColor = `${deleteColor}`
+        square.onmouseover = ()=> square.style.backgroundColor = `${deleteColor}`
       })
 
     container.appendChild(square)
